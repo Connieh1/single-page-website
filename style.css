@@ -1,5 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 
+.nav {
+  float: right;
+  font-family: "Arial";
+  text-transform: uppercase;
+}
+
+.nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul li {
+  float: left;
+  list-style-type: none;
+  border-top: 1px solid #eee;
+}
+
+.nav ul li a {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+.nav ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+#branding {
+  width: 200px;
+  height: 50px;
+  float: left;
+  background: url("http://lorempixel.com/output/city-q-g-640-480-2.jpg")
+    no-repeat center center;
+  background-size: 200px;
+}
+
 #header {
   position: fixed;
   background-color: white;
@@ -13,6 +52,10 @@
   display: none;
 }
 
+.section:nth-child(even) {
+  background-color: #dddddd;
+}
+
 body {
   /* background-color: light-gray; */
 }
@@ -23,5 +66,11 @@ body {
   overflow: hidden;
   /* position: relative; */
   font-family: "Roboto Condensed", sans-serif;
-  background-color: #dddddd;
+  /* background-color: #dddddd; */
+}
+
+#projects {
+  background: url("http://lorempixel.com/output/city-q-g-640-480-2.jpg")
+    no-repeat;
+  background-size: cover;
 }
