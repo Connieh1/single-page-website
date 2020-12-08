@@ -50,6 +50,11 @@
 
 #minimenu {
   display: none;
+  float: right;
+  margin-right: 20px;
+  font-size: 36px;
+  margin-top: 5px;
+  cursor: pointer;
 }
 
 .section:nth-child(even) {
@@ -69,8 +74,34 @@ body {
   /* background-color: #dddddd; */
 }
 
-#projects {
-  background: url("http://lorempixel.com/output/city-q-g-640-480-2.jpg")
+.section article {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#about {
+  background: url("http://lorempixel.com/output/transport-q-c-640-480-9.jpg")
     no-repeat;
   background-size: cover;
+}
+
+#projects {
+  background: url("http://lorempixel.com/output/people-q-c-640-480-4.jpg")
+    no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 680px) {
+  #minimenu {
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 480px) {
 }
