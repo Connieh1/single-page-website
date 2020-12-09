@@ -97,6 +97,11 @@ body {
   }
   .nav {
     display: none;
+    width: 100%;
+  }
+  .nav ul li {
+    width: 100%;
+    text-align: center;
   }
 }
 
