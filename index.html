@@ -162,6 +162,14 @@
         $("#minimenu").click(function () {
           $(".nav").slideToggle();
         });
+
+        $(".nav li a").click(function () {
+          let targetSection = $(this).attr("href");
+          let scrTo = $(targetSection).offset().top;
+          $("html, body").animate({ scrollTop: scrTo }, 1000);
+          console.log();
+        });
+        event.preventDefault();
       });
     </script>
   </body>
