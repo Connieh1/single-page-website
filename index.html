@@ -163,6 +163,13 @@
           $(".nav").slideToggle();
         });
 
+        $(window).bind("resize", function () {
+          if ($("#minimenu").css("display") == "none") {
+            $(".nav").show();
+          } else {
+            $(".nav").hide();
+          }
+        });
         $(".nav li a").click(function () {
           let targetSection = $(this).attr("href");
           let scrTo = $(targetSection).offset().top;
