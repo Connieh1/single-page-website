@@ -167,7 +167,10 @@
           let targetSection = $(this).attr("href");
           let scrTo = $(targetSection).offset().top;
           $("html, body").animate({ scrollTop: scrTo }, 1000);
-          console.log();
+          console.log($("#minimenu").css("display"));
+          if ($("#minimenu").css("display") == "block") {
+            $(".nav").slideUp();
+          }
         });
         event.preventDefault();
       });

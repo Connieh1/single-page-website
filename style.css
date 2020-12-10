@@ -93,7 +93,8 @@ body {
 
 @media screen and (max-width: 680px) {
   #minimenu {
-    display: block;
+    display: block !important;
+    float: right;
   }
   .nav {
     display: none;
